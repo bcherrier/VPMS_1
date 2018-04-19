@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_75" class="java.beans.XMLDecoder">
+ <object class="com.csc.dip.mm.testsuite.center.ui.TestSuiteCenterModel" id="TestSuiteCenterModel0">
+  <void property="tasks">
+   <void method="add">
+    <object class="com.csc.dip.vpms.testsuite.tasks.PMS2TestStockTask">
+     <void property="name">
+      <string>1. Import Test Unitaires du modèle</string>
+     </void>
+     <void property="pmsName">
+      <string>/5OP_Configuration/5OP_Configuration.pms</string>
+     </void>
+     <void property="testStockFileId">
+      <string>/5OP_Configuration/Tests/5OP_TestUnitaires.tst</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="com.csc.dip.vpms.testsuite.tasks.TestStockExecuteTask">
+     <void property="name">
+      <string>2. Exécution de Test Unitaires</string>
+     </void>
+     <void property="tsrName">
+      <string>/5OP_Configuration/Tests/5OP_TestUnitaires.tsr</string>
+     </void>
+     <void property="tstName">
+      <string>/5OP_Configuration/Tests/5OP_TestUnitaires.tst</string>
+     </void>
+     <void property="vpmName">
+      <string>/5OP_Configuration/5OP_Configuration.vpm</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="com.csc.dip.vpms.testsuite.tasks.TestStock2HTMLTask">
+     <void property="inputFileName">
+      <string>/5OP_Configuration/Tests/5OP_TestUnitaires.tsr</string>
+     </void>
+     <void property="name">
+      <string>3. Création d&apos;un document de Test Unitaires</string>
+     </void>
+     <void property="outputFileName">
+      <string>/5OP_Configuration/Documents/5OP_TestUnitaires.html</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="com.csc.dip.vpms.testsuite.tasks.GeneratorConfigToTestStockTask">
+     <void property="generatorConfigFileId">
+      <string>/5OP_Configuration/TestMass/5OP_TestGlobal.tstpl</string>
+     </void>
+     <void property="name">
+      <string>4. Génération de Test global</string>
+     </void>
+     <void property="testStockFileId">
+      <string>/5OP_Configuration/TestMass/5OP_TestGlobal.tst</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="com.csc.dip.vpms.testsuite.tasks.TestStockExecuteTask">
+     <void property="name">
+      <string>5. Exécution de test global</string>
+     </void>
+     <void property="tsrName">
+      <string>/5OP_Configuration/TestMass/5OP_TestGlobal.tsr</string>
+     </void>
+     <void property="tstName">
+      <string>/5OP_Configuration/TestMass/5OP_TestGlobal.tst</string>
+     </void>
+     <void property="vpmName">
+      <string>/5OP_Configuration/5OP_Configuration.vpm</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="com.csc.dip.vpms.testsuite.tasks.TestStock2HTMLTask">
+     <void property="inputFileName">
+      <string>/5OP_Configuration/TestMass/5OP_TestGlobal.tsr</string>
+     </void>
+     <void property="name">
+      <string>6. Création de document Test Global</string>
+     </void>
+     <void property="outputFileName">
+      <string>/5OP_Configuration/Documents/5OP_TestGlobal.html</string>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>

@@ -1,0 +1,7 @@
+compiler.option.debug=true
+compiler.option.double.arithmetic=true
+compiler.option.file.extension.lowercase=true
+compiler.option.vpm.resolve=true
+eclipse.preferences.version=1
+enableProjectSpecificSettings=false
+moduleBuildProcessEnableProjectSpecificSettings=false

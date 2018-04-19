@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testStockGeneratorConfig mainPmsFileName="/5OP_Configuration/5OP_Configuration.pms">
+	<computableConfig baseName="Test_F_CalcRoundPeriodicGrossPremiumAccident" attributePropertyName="" type="property">
+	</computableConfig>
+	<computableConfig baseName="Test_F_CalcRoundPeriodicGrossPremiumWLife" attributePropertyName="" type="property">
+	</computableConfig>
+	<computableConfig baseName="Test_F_CalcRoundPeriodicMngmntChargesWLife" attributePropertyName="" type="property">
+	</computableConfig>
+	<computableConfig baseName="Test_F_CalcRoundPeriodicPurePremiumAccident" attributePropertyName="" type="property">
+	</computableConfig>
+	<computableConfig baseName="Test_F_CalcRoundPeriodicPurePremiumWLife" attributePropertyName="" type="property">
+	</computableConfig>
+	<attributeConfig name="A_BILL_Frequency_STR">
+		<counterAttributeNames>
+		</counterAttributeNames>
+		<rangeConfig>
+			<singleRangeConfig rangeType="singleValue" dataType="string" dateIncrementType="days" minValue="monthly" maxValue="0" increment="1" randomSampleSize="1" javaDateFormat="yyyy-MM-dd" maximumFractionDigits="0"/>
+		</rangeConfig>
+	</attributeConfig>
+	<attributeConfig name="A_CTR_BILL_Duration_INT">
+		<counterAttributeNames>
+		</counterAttributeNames>
+		<rangeConfig>
+			<singleRangeConfig rangeType="singleValue" dataType="number" dateIncrementType="days" minValue="999" maxValue="0" increment="1" randomSampleSize="1" javaDateFormat="yyyy-MM-dd" maximumFractionDigits="0"/>
+		</rangeConfig>
+	</attributeConfig>
+	<attributeConfig name="A_INSR_DoBx_DAT">
+		<counterAttributeNames>
+		</counterAttributeNames>
+		<rangeConfig>
+			<singleRangeConfig rangeType="randomValues" dataType="date" dateIncrementType="years" minValue="10.07.1950" maxValue="10.07.1965" increment="1" randomSampleSize="5" javaDateFormat="dd.MM.yyyy" maximumFractionDigits="0"/>
+		</rangeConfig>
+	</attributeConfig>
+	<attributeConfig name="A_CTR_STAB_StabilizationStatus_STR">
+		<counterAttributeNames>
+		</counterAttributeNames>
+		<rangeConfig>
+			<singleRangeConfig rangeType="singleValue" dataType="string" dateIncrementType="days" minValue="0" maxValue="0" increment="1" randomSampleSize="1" javaDateFormat="yyyy-MM-dd" maximumFractionDigits="0"/>
+		</rangeConfig>
+	</attributeConfig>
+	<attributeConfig name="A_CTR_StartDate_DAT">
+		<counterAttributeNames>
+		</counterAttributeNames>
+		<rangeConfig>
+			<singleRangeConfig rangeType="singleValue" dataType="date" dateIncrementType="days" minValue="10.07.2015" maxValue="0" increment="1" randomSampleSize="1" javaDateFormat="dd.MM.yyyy" maximumFractionDigits="0"/>
+		</rangeConfig>
+	</attributeConfig>
+	<attributeConfig name="A_CVRG_BNFT_Amount_REA">
+		<counterAttributeNames>
+		</counterAttributeNames>
+		<rangeConfig>
+			<singleRangeConfig rangeType="randomValues" dataType="number" dateIncrementType="days" minValue="3200" maxValue="7000" increment="500" randomSampleSize="5" javaDateFormat="yyyy-MM-dd" maximumFractionDigits="0"/>
+		</rangeConfig>
+	</attributeConfig>
+	<attributeConfig name="A_CTR_ProductId_STR">
+		<counterAttributeNames>
+		</counterAttributeNames>
+		<rangeConfig>
+			<singleRangeConfig rangeType="singleValue" dataType="string" dateIncrementType="days" minValue="5OP" maxValue="0" increment="1" randomSampleSize="1" javaDateFormat="yyyy-MM-dd" maximumFractionDigits="0"/>
+		</rangeConfig>
+	</attributeConfig>
+	<attributeConfig name="A_CVRG_AccidentCoeff_REA">
+		<counterAttributeNames>
+		</counterAttributeNames>
+		<rangeConfig>
+			<singleRangeConfig rangeType="singleValue" dataType="string" dateIncrementType="days" minValue="0" maxValue="0" increment="1" randomSampleSize="1" javaDateFormat="yyyy-MM-dd" maximumFractionDigits="0"/>
+		</rangeConfig>
+	</attributeConfig>
+</testStockGeneratorConfig>
