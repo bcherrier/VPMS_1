@@ -1,4 +1,4 @@
-;1	14.03.2018 17:15:40	ahoang	
+;1	19.04.2018 17:59:40	GPV0099018	
 X0 de07a8 0 0 0 0 0 0
 
 O0 de0694 0 0 0 0 0 0
@@ -15,8 +15,12 @@ P1 de0804 0 0 0 0 0 2
 Ce module décrit l'offre 5OP de Prévoir, il contient les attributs, fonctions, tables à surcharger du produit technique SOCLE_VE (SOCLE_VE_Definition)
 F0 de0860 0 0 0 0 0 0
 
-A0 de0918 0 5c50fc13 0 0 0 0
+A0 de0918 0 20b0450d 0 0 0 0
 
+A1 20b0450d de0918 0 5c50fc13 0 0 2
+A_NewVariable
+check
+"Test_VPMS"
 A1 5c50fc13 de0918 0 49276011 0 0 2
 A_CurrentModule_VPM
 check
@@ -232,7 +236,8 @@ L0
 B0
 P0
 F0
-A2
+A3
+20b0450d
 5c50fc13
 49276011
 T1
